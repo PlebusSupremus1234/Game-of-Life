@@ -4,4 +4,5 @@ John Conway's Game of Life is a cellular automaton and is played on an infinite 
 ![Demo Pic](assets/demo.gif)
 
 ## Sources & Credits
-[Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) on Wikipedia
+- [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life) on Wikipedia
+- [Distance from a point to a line](https://en.wikipedia.org/wiki/Distance_from_a_point_to_a_line) on Wikipedia
