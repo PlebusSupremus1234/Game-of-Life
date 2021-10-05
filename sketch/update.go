@@ -1,6 +1,8 @@
 package sketch
 
-func countNeighbors(array [100][100]int, y int, x int) int {
+import "PlebusSupremus1234/game_of_life/global"
+
+func countNeighbors(y int, x int) int {
 	sum := 0
 
 	for i := -1; i < 2; i++ {
@@ -8,21 +10,21 @@ func countNeighbors(array [100][100]int, y int, x int) int {
 			col := (y + i + 100) % 100
 			row := (x + j + 100) % 100
 
-			sum += array[col][row]
+			sum += global.Grid[col][row]
 		}
 	}
 
-	sum -= array[y][x]
+	sum -= global.Grid[y][x]
 
 	return sum
 }
 
-func Update(array *[100][100]int) {
-	next := [100][100]int {}
+func Update() {
+	next := [100][100]int{}
 
-	for i, subarray := range array {
+	for i, subarray := range global.Grid {
 		for j, e := range subarray {
-			amount := countNeighbors(*array, i, j)
+			amount := countNeighbors(i, j)
 
 			if e == 0 && amount == 3 {
 				next[i][j] = 1
@@ -34,5 +36,5 @@ func Update(array *[100][100]int) {
 		}
 	}
 
-	*array = next
+	global.Grid = next
 }
