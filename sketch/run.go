@@ -25,6 +25,22 @@ func Run() {
 	if rl.IsMouseButtonPressed(rl.MouseLeftButton) {
 		prevMouseX = rl.GetMouseX()
 		prevMouseY = rl.GetMouseY()
+
+		if global.IsPlacing && prevMouseX >= 0 && prevMouseX < 1000 && prevMouseY >= 0 && prevMouseY < 1000 {
+			global.IsPlacing = false
+
+			x := prevMouseX / 10
+			y := prevMouseY / 10
+
+			for _, element := range global.SelectedShape {
+				col := y + int32(element.Y)
+				row := x + int32(element.X)
+
+				if col >= 0 && col < 100 && row >= 0 && row < 100 {
+					global.Grid[col][row] = 1
+				}
+			}
+		}
 	}
 
 	if rl.IsMouseButtonDown(rl.MouseLeftButton) {
