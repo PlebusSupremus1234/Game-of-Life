@@ -1,7 +1,7 @@
 package gui
 
 import (
-	"PlebusSupremus1234/game_of_life/global"
+	"github.com/PlebusSupremus1234/Game-of-Life/global"
 	rg "github.com/gen2brain/raylib-go/raygui"
 	"github.com/gen2brain/raylib-go/raylib"
 )

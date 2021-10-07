@@ -1,6 +1,6 @@
 package global
 
-import "PlebusSupremus1234/game_of_life/shapes"
+import "github.com/PlebusSupremus1234/Game-of-Life/shapes"
 
 var Width = int32(1000)
 var ConfigWidth = int32(300)

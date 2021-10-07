@@ -1,7 +1,7 @@
 package sketch
 
 import (
-	"PlebusSupremus1234/game_of_life/global"
+	"github.com/PlebusSupremus1234/Game-of-Life/global"
 	"github.com/gen2brain/raylib-go/raylib"
 )
 
@@ -22,12 +22,15 @@ func Run() {
 		global.Tool = 1
 	}
 
+	customShape := false
+
 	if rl.IsMouseButtonPressed(rl.MouseLeftButton) {
 		prevMouseX = rl.GetMouseX()
 		prevMouseY = rl.GetMouseY()
 
 		if global.IsPlacing && prevMouseX >= 0 && prevMouseX < 1000 && prevMouseY >= 0 && prevMouseY < 1000 {
 			global.IsPlacing = false
+			customShape = true
 
 			x := prevMouseX / 10
 			y := prevMouseY / 10
@@ -47,7 +50,7 @@ func Run() {
 		x := rl.GetMouseX()
 		y := rl.GetMouseY()
 
-		if x >= 0 && x < int32(width) && y >= 0 && y < int32(width) {
+		if x >= 0 && x < int32(width) && y >= 0 && y < int32(width) && !customShape {
 			HandleMouseDown(x, y)
 		}
 	}

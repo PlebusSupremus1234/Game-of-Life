@@ -1,6 +1,6 @@
 package gui
 
-import "PlebusSupremus1234/game_of_life/global"
+import "github.com/PlebusSupremus1234/Game-of-Life/global"
 
 func DrawConfigButtons() {
 	padding := int32(50)

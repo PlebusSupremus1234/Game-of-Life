@@ -1,4 +1,4 @@
-module PlebusSupremus1234/game_of_life
+module github.com/PlebusSupremus1234/Game-of-Life
 
 go 1.16
 

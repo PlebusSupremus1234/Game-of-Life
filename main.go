@@ -1,8 +1,8 @@
 package main
 
 import (
-	"PlebusSupremus1234/game_of_life/global"
-	"PlebusSupremus1234/game_of_life/sketch"
+	"github.com/PlebusSupremus1234/Game-of-Life/global"
+	"github.com/PlebusSupremus1234/Game-of-Life/sketch"
 	"github.com/gen2brain/raylib-go/raylib"
 )
 

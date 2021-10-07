@@ -1,7 +1,7 @@
 package sketch
 
 import (
-	"PlebusSupremus1234/game_of_life/global"
+	"github.com/PlebusSupremus1234/Game-of-Life/global"
 	"math"
 )
 
