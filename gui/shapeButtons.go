@@ -9,22 +9,22 @@ func DrawShapeButtons() {
 	padding := int32(50)
 	fontSize := int32(20)
 
-	if DrawButton("Hammerhead Spaceship", fontSize, padding, 600, 60) {
+	if DrawButton("Hammerhead Spaceship", fontSize, padding, 670, 60) {
 		global.IsPlacing = !global.IsPlacing
 		global.SelectedShape = shapes.Hammerhead
 	}
 
-	if DrawButton("Gosper Glider Gun", fontSize, padding, 670, 60) {
+	if DrawButton("Gosper Glider Gun", fontSize, padding, 740, 60) {
 		global.IsPlacing = !global.IsPlacing
 		global.SelectedShape = shapes.GliderGun
 	}
 
-	if DrawButton("Glider Spaceship", fontSize, padding, 740, 60) {
+	if DrawButton("Glider Spaceship", fontSize, padding, 810, 60) {
 		global.IsPlacing = !global.IsPlacing
 		global.SelectedShape = shapes.Glider
 	}
 
-	if DrawButton("R Pentomino", fontSize, padding, 810, 60) {
+	if DrawButton("R Pentomino", fontSize, padding, 880, 60) {
 		global.IsPlacing = !global.IsPlacing
 		global.SelectedShape = shapes.RPentomino
 	}

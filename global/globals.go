@@ -2,6 +2,8 @@ package global
 
 import "github.com/PlebusSupremus1234/Game-of-Life/shapes"
 
+var TargetFPS = int32(30)
+
 var Width = int32(1000)
 var ConfigWidth = int32(300)
 var CellWidth = int32(10)

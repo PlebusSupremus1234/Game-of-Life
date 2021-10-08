@@ -66,8 +66,9 @@ func Draw() {
 	}
 	LeftText("Guidelines: "+text, 30, 1010, 190)
 
-	text = "Special Shapes"
-	CenterText(text, 32, 1000, 550, 300)
+	LeftText("Speed:", 30, 1010, 230)
+
+	CenterText("Special Shapes", 32, 1000, 620, 300)
 
 	// Gui
 	gui.Draw()

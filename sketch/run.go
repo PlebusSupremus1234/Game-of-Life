@@ -9,6 +9,8 @@ var prevMouseX = int32(-1)
 var prevMouseY = int32(-1)
 
 func Run() {
+	rl.SetTargetFPS(global.TargetFPS)
+
 	width := 1000
 
 	if rl.IsKeyPressed(rl.KeySpace) {

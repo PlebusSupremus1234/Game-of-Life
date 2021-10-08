@@ -11,7 +11,7 @@ func DrawConfigButtons() {
 		text = "Play (Space)"
 	}
 
-	if DrawButton(text, fontSize, padding, 250, 60) {
+	if DrawButton(text, fontSize, padding, 320, 60) {
 		global.Paused = !global.Paused
 	}
 
@@ -20,7 +20,7 @@ func DrawConfigButtons() {
 		text = "Switch to Pencil (P)"
 	}
 
-	if DrawButton(text, fontSize, padding, 320, 60) {
+	if DrawButton(text, fontSize, padding, 390, 60) {
 		if global.Tool == 0 {
 			global.Tool = 1
 		} else {
@@ -30,13 +30,13 @@ func DrawConfigButtons() {
 
 	text = "Toggle Guidelines"
 
-	if DrawButton(text, fontSize, padding, 390, 60) {
+	if DrawButton(text, fontSize, padding, 460, 60) {
 		global.GuideLines = !global.GuideLines
 	}
 
 	text = "Clear Grid"
 
-	if DrawButton(text, fontSize, padding, 460, 60) {
+	if DrawButton(text, fontSize, padding, 530, 60) {
 		global.Grid = [100][100]int{}
 	}
 }

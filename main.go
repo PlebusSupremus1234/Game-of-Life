@@ -9,7 +9,7 @@ import (
 func main() {
 	rl.InitWindow(global.Width+global.ConfigWidth, global.Width, "Conway's Game of Life by PlebusSupremus1234")
 
-	rl.SetTargetFPS(30)
+	rl.SetTargetFPS(global.TargetFPS)
 
 	for !rl.WindowShouldClose() {
 		sketch.Run()
